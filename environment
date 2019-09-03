@@ -5,6 +5,6 @@ export CONTECO_DESCRIPTION="Import of external official Nginx image into the Con
 
 export CONTECO_TYPE="external"
 export CONTECO_NAME="nginx"
-export CONTECO_TAG="1.15.12"
+export CONTECO_TAG="1.17.3"
 
 export CONTECO_BUILD="external"

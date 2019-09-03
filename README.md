@@ -4,7 +4,7 @@ Import of external official Nginx image into the ContEco ecosystem.
 
 ## Current Import Version
 
-Current import is based on nginx:1.15.12.
+Current import is based on nginx:1.17.3.
 
 ## Import Modifications
 
@@ -17,4 +17,5 @@ The import build installs the following packages:
 
 ## Tags
 
-* 1.15.12 (latest)
+* 1.17.3 (latest)
+* 1.15.12 
