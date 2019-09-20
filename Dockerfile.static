@@ -8,7 +8,7 @@ RUN apt-get update && apt-get install -y gettext && apt-get install -y jq && rm 
 ##### END image/Dockerfile/build-instructions #####
 
 ##### BEGIN external/Dockerfile/conteco #####
-COPY ./ /conteco/git-repository/
+COPY ./ /conteco/repo/
 ##### END external/Dockerfile/conteco #####
 
 ##### BEGIN external/Dockerfile/labels-footer #####
@@ -22,5 +22,5 @@ LABEL io.vcweb.schema-version="1.0" \
       io.vcweb.build="external" \
       io.vcweb.label="External Nginx image" \
       io.vcweb.description="Import of external official Nginx image into the ContEco ecosystem." \
-      io.vcweb.repository="/conteco/git-repository" 
+      io.vcweb.repository="/conteco/repo" 
 ##### END external/Dockerfile/labels-footer #####
