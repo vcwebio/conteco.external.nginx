@@ -20,7 +20,7 @@ LABEL io.vcweb.schema-version="1.0" \
       io.vcweb.tag="1.17.3" \
       io.vcweb.base="nginx:1.17.3" \
       io.vcweb.build="external" \
-      io.vcweb.label="External Nginx image" \
-      io.vcweb.description="Import of external official Nginx image into the ContEco ecosystem." \
+      io.vcweb.label="external.nginx - ContEco" \
+      io.vcweb.description="Nginx image with ContEco external prerequisites installed." \
       io.vcweb.repository="/conteco/repo" 
 ##### END external/Dockerfile/labels-footer #####

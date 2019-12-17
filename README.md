@@ -1,16 +1,8 @@
-# conteco.external.nginx
+# `external.nginx` - ContEco
 
-Import of external official Nginx image into the ContEco ecosystem.
+Nginx image with ContEco external prerequisites installed.
 
-## Current Import Version
-
-Current import is based on nginx:1.17.3.
-
-## Import Modifications
-
-### Current Modifications
-
-The import build installs the following packages:
+## Installed External Prerequisites
 
 * gettext - for availability of envsubst
 * jq - JSON processor
@@ -18,4 +10,3 @@ The import build installs the following packages:
 ## Tags
 
 * 1.17.3 (latest)
-* 1.15.12 

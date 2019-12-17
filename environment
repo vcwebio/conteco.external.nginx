@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-export CONTECO_LABEL="External Nginx image"
-export CONTECO_DESCRIPTION="Import of external official Nginx image into the ContEco ecosystem."
+export CONTECO_LABEL="external.nginx - ContEco"
+export CONTECO_DESCRIPTION="Nginx image with ContEco external prerequisites installed."
 
 export CONTECO_TYPE="external"
 export CONTECO_NAME="nginx"
