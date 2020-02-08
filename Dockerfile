@@ -1,4 +1,4 @@
-##### BEGIN external/Dockerfile/iamge-header #####
+##### BEGIN external/Dockerfile/image-header #####
 FROM ${CONTECO_NAME}:${CONTECO_TAG}
 ##### END external/Dockerfile/image-header #####
 

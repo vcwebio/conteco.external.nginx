@@ -1,4 +1,4 @@
-##### BEGIN external/Dockerfile/iamge-header #####
+##### BEGIN external/Dockerfile/image-header #####
 FROM nginx:1.17.3
 ##### END external/Dockerfile/image-header #####
 
