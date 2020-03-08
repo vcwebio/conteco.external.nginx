@@ -14,7 +14,7 @@ COPY ./ /conteco/repo/
 ##### BEGIN external/Dockerfile/labels-footer #####
 LABEL $CONTECO_LABELSPACE.schema-version="1.0" \
       $CONTECO_LABELSPACE.realm="$CONTECO_REALM" \
-      $CONTECO_LABELSPACE.ecosystem="$CONTECO_ECOSYSTEM" \
+      $CONTECO_LABELSPACE.ecosystem="$CONTECO_ECOSYSTEM_RUNTIME" \
       $CONTECO_LABELSPACE.type="$CONTECO_TYPE" \
       $CONTECO_LABELSPACE.name="$CONTECO_NAME" \
       $CONTECO_LABELSPACE.tag="$CONTECO_TAG" \
