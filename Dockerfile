@@ -4,7 +4,8 @@ FROM ${CONTECO_NAME}:${CONTECO_TAG}
 
 ##### BEGIN image/Dockerfile/build-instructions #####
 USER root
-RUN apt-get update && apt-get install -y gettext && apt-get install -y jq && rm -rf /var/cache/apt/*
+RUN apt-get update && apt-get install -y --force-yes gettext && apt-get install -y --force-yes wget && rm -rf /var/cache/apt/*
+RUN wget -O jq https://github.com/stedolan/jq/releases/download/jq-1.6/jq-linux64 && chmod +x ./jq && cp jq /usr/bin
 ##### END image/Dockerfile/build-instructions #####
 
 ##### BEGIN external/Dockerfile/conteco #####
@@ -22,5 +23,5 @@ LABEL $CONTECO_LABELSPACE.schema-version="1.0" \
       $CONTECO_LABELSPACE.build="$CONTECO_BUILD" \
       $CONTECO_LABELSPACE.label="$CONTECO_LABEL" \
       $CONTECO_LABELSPACE.description="$CONTECO_DESCRIPTION" \
-      $CONTECO_LABELSPACE.repository="/conteco/repo" 
+      $CONTECO_LABELSPACE.repository="/conteco/repo"
 ##### END external/Dockerfile/labels-footer #####

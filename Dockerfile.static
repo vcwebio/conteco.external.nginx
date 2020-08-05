@@ -4,7 +4,8 @@ FROM nginx:1.17.3
 
 ##### BEGIN image/Dockerfile/build-instructions #####
 USER root
-RUN apt-get update && apt-get install -y gettext && apt-get install -y jq && rm -rf /var/cache/apt/*
+RUN apt-get update && apt-get install -y --force-yes gettext && apt-get install -y --force-yes wget && rm -rf /var/cache/apt/*
+RUN wget -O jq https://github.com/stedolan/jq/releases/download/jq-1.6/jq-linux64 && chmod +x ./jq && cp jq /usr/bin
 ##### END image/Dockerfile/build-instructions #####
 
 ##### BEGIN external/Dockerfile/conteco #####
@@ -22,5 +23,5 @@ LABEL io.vcweb.schema-version="1.0" \
       io.vcweb.build="external" \
       io.vcweb.label="external.nginx - ContEco" \
       io.vcweb.description="Nginx image with ContEco external prerequisites installed." \
-      io.vcweb.repository="/conteco/repo" 
+      io.vcweb.repository="/conteco/repo"
 ##### END external/Dockerfile/labels-footer #####
