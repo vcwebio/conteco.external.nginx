@@ -5,7 +5,7 @@ export CONTECO_DESCRIPTION="Nginx image with ContEco external prerequisites inst
 
 export CONTECO_TYPE="external"
 export CONTECO_NAME="nginx"
-export CONTECO_TAG="1.17.3"
+export CONTECO_TAG="1.19.3"
 
 export CONTECO_BASE="${CONTECO_NAME}:${CONTECO_TAG}"
 export CONTECO_BUILD="external"
